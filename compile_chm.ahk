@@ -4,9 +4,9 @@ SetWorkingDir %A_ScriptDir%
 
 if (A_PtrSize = 8) {
     try
-        RunWait "%A_AhkPath%\..\AutoHotkeyU32.exe" "%A_ScriptFullPath%"
+        RunWait "%A_AhkPath%\..\IndexHotkeyU32.exe" "%A_ScriptFullPath%"
     catch
-        MsgBox 16,, This script must be run with AutoHotkey 32-bit, due to use of the ScriptControl COM component.
+        MsgBox 16,, This script must be run with IndexHotkey 32-bit, due to use of the ScriptControl COM component.
     ExitApp
 }
 
